@@ -1,6 +1,3 @@
-#####################################################
-# Stage: Shared dependencies for Development & test #
-#####################################################
 FROM ruby:2.5.3-alpine as Dependencies
 
 ARG RAILS_ENV
