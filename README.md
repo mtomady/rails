@@ -1,2 +1,3 @@
-# Rails Dockerfile
-Basic Dockerfile with required packages (e.g. postgres)
+# Rails
+
+Base: ruby:2.5.3-alpine, contains dependencies for building rails applications
