@@ -1,6 +1,25 @@
-FROM ruby:2.5.3-alpine
+#####################################################
+# Stage: Shared dependencies for Development & test #
+#####################################################
+FROM ruby:2.5.3-alpine as Dependencies
 
-RUN apk add --no-cache nodejs  build-base libxml2-dev postgresql postgresql-dev tzdata git imagemagick yarn
+ARG RAILS_ENV
+ARG BUNDLE_WITHOUT
+ARG DISABLE_SPRING=1
 
-RUN wget https://github.com/Droplr/aws-env/raw/master/bin/aws-env-linux-amd64 -O /bin/aws-env && \
-    chmod +x /bin/aws-env
+RUN apk add --update --no-cache \
+    build-base \
+    postgresql-dev \
+    git \
+    imagemagick \
+    nodejs-current-npm \
+    yarn \
+    python \
+    tzdata \
+    python \
+    libxml2-dev \
+    libxslt-dev \
+    libffi-dev \
+    ruby-bundler \
+    ruby-nokogiri \
+    ruby-dev
