@@ -2,7 +2,7 @@ FROM ruby:2.5.3-alpine
 
 RUN apk add --update --no-cache \
    postgresql-client \
-   imagemagick \
+   vips \
    tzdata \
    nodejs-current \
    file
