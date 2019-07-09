@@ -8,7 +8,7 @@ RUN apk add --update --no-cache \
     build-base \
     postgresql-dev \
     git \
-    imagemagick \
+    vips \
     nodejs-current-npm \
     yarn \
     python \
