@@ -19,6 +19,7 @@ RUN apk add --update --no-cache \
     libffi-dev \
     ruby-bundler \
     ruby-nokogiri \
-    ruby-dev \ 
+    ruby-dev \
     vips \
-    vips-dev
+    vips-dev \
+    libsass
