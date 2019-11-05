@@ -1,4 +1,4 @@
-FROM ruby:2.5.5-alpine3.10 as Dependencies
+FROM ruby:2.6.5-alpine3.10 as Dependencies
 
 ARG RAILS_ENV
 ARG BUNDLE_WITHOUT
@@ -19,6 +19,6 @@ RUN apk add --update --no-cache \
     libffi-dev \
     ruby-bundler \
     ruby-nokogiri \
-    ruby-dev \ 
+    ruby-dev \
     vips \
     vips-dev
