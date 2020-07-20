@@ -1,3 +1,3 @@
 # Rails
 
-Base: ruby:2.5.3-alpine, contains dependencies for building rails applications
+Base: ruby:2.7.1-alpine, contains dependencies for building rails applications
