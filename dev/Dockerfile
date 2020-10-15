@@ -1,5 +1,8 @@
 FROM ruby:2.7.1-alpine3.11 as Dependencies
 
+RUN apt-get update && apt-get install libjemalloc1 && rm -rf /var/lib/apt/lists/*
+ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.1
+
 ARG RAILS_ENV
 ARG BUNDLE_WITHOUT
 ARG DISABLE_SPRING=1
@@ -22,3 +25,4 @@ RUN apk add --update --no-cache \
     ruby-dev \
     vips \
     vips-dev
+    
