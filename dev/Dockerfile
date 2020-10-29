@@ -10,9 +10,11 @@ ARG DISABLE_SPRING=1
 RUN apk add --update --no-cache \
     build-base \
     postgresql-dev \
+		curl \
     git \
     imagemagick \
     nodejs-current-npm \
+		net-tools \
     yarn \
     python \
     tzdata \
@@ -23,6 +25,8 @@ RUN apk add --update --no-cache \
     ruby-bundler \
     ruby-nokogiri \
     ruby-dev \
+		tcpdump \
+		netstat
     vips \
     vips-dev
     
