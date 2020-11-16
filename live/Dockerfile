@@ -7,4 +7,6 @@ RUN apk add --update --no-cache \
    nodejs-current \
    file \
    vips \
-   vips-dev
+   vips-dev \
+	 tcpdump \
+	 net-tools
