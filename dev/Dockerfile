@@ -23,7 +23,6 @@ RUN apk add --update --no-cache \
     ruby-nokogiri \
     ruby-dev \
 		tcpdump \
-		netstat \
     vips \
     vips-dev
     
