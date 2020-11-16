@@ -8,5 +8,5 @@ RUN apk add --update --no-cache \
    file \
    vips \
    vips-dev \
-	 tcpdump \
+	 tcpdump  \
 	 net-tools
