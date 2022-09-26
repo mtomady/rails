@@ -1,4 +1,4 @@
-FROM ruby:3.1.2-alpine3.14 as Dependencies
+FROM ruby:3.0.4-alpine3.16 as Dependencies
 
 ARG RAILS_ENV
 ARG BUNDLE_WITHOUT
